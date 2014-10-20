@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="2" unitdist="mil" unit="mil" style="lines" multiple="1" display="yes" altdistance="0.025" altunitdist="inch" altunit="inch"/>
+<grid distance="50" unitdist="mil" unit="mil" style="lines" multiple="1" display="yes" altdistance="0.025" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -201,6 +201,7 @@ OPEN 100mAh
 CLOSED 500mAh</text>
 <text x="16.9164" y="15.5194" size="1.016" layer="21" font="vector" ratio="10" rot="R90">+</text>
 <text x="16.9672" y="18.9738" size="1.016" layer="21" font="vector" ratio="10" rot="R90">-</text>
+<text x="0.127" y="3.81" size="0.6096" layer="21" font="vector" ratio="10" rot="SR0">v1.0</text>
 </plain>
 <libraries>
 <library name="Ai_Passives">
@@ -4101,7 +4102,7 @@ This library includes schematic frames, logos, and other non-electrical/-mechani
 <class number="0" name="default" width="0" drill="0">
 </class>
 </classes>
-<designrules name="ai_2layer_qfn">
+<designrules name="ai_2layer">
 <description language="en">&lt;b&gt;EAGLE Design Rules&lt;/b&gt;
 &lt;p&gt;
 The default Design Rules have been set to cover
@@ -4137,11 +4138,11 @@ design rules under a new name.</description>
 <param name="rvViaInner" value="0.25"/>
 <param name="rvMicroViaOuter" value="0.25"/>
 <param name="rvMicroViaInner" value="0.25"/>
-<param name="rlMinPadTop" value="1mil"/>
+<param name="rlMinPadTop" value="12mil"/>
 <param name="rlMaxPadTop" value="20mil"/>
-<param name="rlMinPadInner" value="1mil"/>
+<param name="rlMinPadInner" value="10mil"/>
 <param name="rlMaxPadInner" value="20mil"/>
-<param name="rlMinPadBottom" value="1mil"/>
+<param name="rlMinPadBottom" value="12mil"/>
 <param name="rlMaxPadBottom" value="20mil"/>
 <param name="rlMinViaOuter" value="10mil"/>
 <param name="rlMaxViaOuter" value="20mil"/>
